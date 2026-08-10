@@ -1,0 +1,10 @@
+export type Todo = {
+  id: string
+  title: string
+  completed: boolean
+  created_at: string
+  updated_at: string
+}
+
+export CreateTodoInput = Pick<Todo, "title">
+export UpateTodoInput = Partial<Pick<Todo, "title" | "completed">>

@@ -10,6 +10,7 @@
         "@nuxt/ui": "^4.10.0",
         "nuxt": "^4.5.1",
         "tailwindcss": "^4.3.3",
+        "zod": "^4.4.3",
       },
       "devDependencies": {
         "@nuxt/eslint": "^1.16.0",
