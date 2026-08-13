@@ -22,7 +22,9 @@ async function addTodo() {
   <div>
     <h1>Todo App</h1>
     <ul v-for="todo in todos" :key="todo.id">
-      <li>{{ todo.title }}</li>
+      <NuxtLink :to="`todo-${todo.id}`">
+        <li>{{ todo.title }}</li>
+      </NuxtLink>
     </ul>
     <button @click="addTodo">add</button>
   </div>
