@@ -10,5 +10,5 @@ export type Todo = {
 
 export type CreateTodoInput = Pick<Todo, "title" | "description" | "priority">;
 export type UpdateTodoInput = Partial<
-  Pick<Todo, "title" | "completed" | "description" | "priority">
+  Pick<Todo, "title" | "completed" | "description" | "priority" | "updated_at">
 >;
